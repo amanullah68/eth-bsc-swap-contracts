@@ -21,7 +21,7 @@ ETH BSC Swap Contracts are responsible for registering swap pairs and swapping a
 
 Once swap pair is registered, users can swap tokens from ETH to BSC.
 
-1. Users call `swapBSC2ETH` via ETHSwapAgent and specify erc20 token address, amount and swap fee.
+1. Users call `swapETH2BSC` via ETHSwapAgent and specify erc20 token address, amount and swap fee.
 2. Swap service will monitor the `SwapStarted` event and call `fillETH2BSCSwap` via BSCSwapAgent to mint corresponding bep20
 tokens to the same address that initiate the swap.
 
